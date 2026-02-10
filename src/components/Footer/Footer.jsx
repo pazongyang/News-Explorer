@@ -1,6 +1,6 @@
 import "./Footer.css";
 import gitlogo from "../../assets/icons/gitlogo.svg";
-import linkedin from "../../assets/icons/linkedin.svg";
+import linkedin from "../../assets/icons/linkedIn.svg";
 
 function Footer() {
   return (

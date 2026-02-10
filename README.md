@@ -5,7 +5,7 @@ Users can search for news articles by keyword, view results as cards, and (when 
 
 ## Live Demo
 
-https://news-explorer-xi.vercel.app/
+https://news-explorer-je6k.vercel.app/
 
 ## Project Pitch Video
 

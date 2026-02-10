@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .main__hero {
@@ -13,6 +14,8 @@
   align-items: center;
   position: relative;
   height: 576px;
+  position: relative;
+  z-index: 1;
 }
 
 .main__hero-content {
@@ -57,8 +60,6 @@
   color: rgba(255, 255, 255, 1);
 }
 
-/* Search Results Errors */
-
 .search-results__error {
   background-color: rgba(245, 246, 247, 1);
   width: 100%;
@@ -99,6 +100,14 @@
   padding: 40px 0;
   width: 100%;
   height: 282px;
+}
+
+.search-results,
+.search-results__error,
+.search-results__error-message,
+.about {
+  position: relative;
+  z-index: 3;
 }
 
 .search-results__error-text {

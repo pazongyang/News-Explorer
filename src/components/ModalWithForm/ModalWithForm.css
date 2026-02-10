@@ -1,0 +1,82 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_open {
+  display: flex;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+
+  width: 40px;
+  height: 40px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal__close-button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html:has(.modal_open),
+  body:has(.modal_open) {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 100vh;
+    padding: 56px 0 0;
+    overflow: hidden;
+
+    background-color: transparent;
+  }
+
+  body:has(.modal_open) .menu-bar {
+    display: none;
+  }
+
+  .modal__close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    width: 24px;
+    height: 24px;
+
+    z-index: 10001;
+  }
+
+  .modal__close-button img {
+    width: 24px;
+    height: 24px;
+    filter: none !important;
+  }
+}

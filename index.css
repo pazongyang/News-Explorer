@@ -1,0 +1,29 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .main,
+  .saved-articles {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .page {
+    min-width: 320px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}

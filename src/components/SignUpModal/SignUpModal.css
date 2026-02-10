@@ -34,9 +34,9 @@
   display: block;
 }
 
-.modal__container {
+.signup-modal__container {
   width: 430px;
-  height: 380px;
+  height: 458px;
 
   background-color: #ffffff;
   border-radius: 16px;
@@ -46,22 +46,23 @@
   position: relative;
 }
 
-.login-form__content {
+.signup-form__content {
   height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
 }
 
-.login-form__title {
+.signup-form__title {
   font-weight: 900;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1;
   height: 32px;
   margin: 0 0 22px;
 }
 
-.login-form__field {
+.signup-form__field {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -70,33 +71,37 @@
   margin-bottom: 31px;
 }
 
-.login-form__label {
+.signup-form__label {
   color: rgba(47, 113, 229, 1);
   font-size: 12px;
   line-height: 1;
 }
 
-.login-form__input {
+.signup-form__input {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  opacity: 20%;
 
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1;
   padding-bottom: 10px;
 
   background: transparent;
   outline: none;
 }
 
-.login-form__error {
+.signup-form__input:focus {
+  border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.signup-form__error {
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
   color: rgba(255, 0, 0, 1);
+  border-bottom: none !important;
 }
 
-.login-form__buttons {
+.signup-form__buttons {
   margin-top: auto;
 
   display: flex;
@@ -105,43 +110,46 @@
   gap: 16px;
 }
 
-.login-form__submit {
+.signup-form__submit {
   width: 360px;
   height: 64px;
+
   font-size: 18px;
   font-weight: 500;
+
   border: none;
+  border-radius: 100px;
 
   color: rgba(182, 188, 191, 1);
   cursor: not-allowed;
+
   transition: background-color 0.3s ease;
-  border-radius: 100px;
 }
 
-.login-form__submit_active {
+.signup-form__submit_active {
   background-color: rgba(47, 113, 229, 1);
   color: white;
   cursor: pointer;
 }
 
-.login-form__secondary {
+.signup-form__secondary {
   border: none;
   background: none;
 }
 
-.login-form__secondary-link {
+.signup-form__secondary-link {
   color: rgba(47, 113, 229, 1);
 }
 
 @media (max-width: 768px) {
-  .modal__container {
+  .signup-modal__container {
     width: 430px;
     max-width: calc(100% - 32px);
     height: auto;
   }
 
-  .login-form__field,
-  .login-form__submit {
+  .signup-form__field,
+  .signup-form__submit {
     width: 100%;
   }
 
@@ -168,7 +176,7 @@
     overflow: hidden;
   }
 
-  .modal__container {
+  .signup-modal__container {
     width: 320px;
     height: 520px;
     max-width: 320px;
@@ -201,27 +209,27 @@
     color: white;
   }
 
-  .login-form__content {
+  .signup-form__content {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .login-form__field {
+  .signup-form__field {
     width: 100%;
     margin-bottom: 22px;
   }
 
-  .login-form__input {
+  .signup-form__input {
     width: 100%;
   }
 
-  .login-form__buttons {
+  .signup-form__buttons {
     margin-top: auto;
     gap: 14px;
   }
 
-  .login-form__submit {
+  .signup-form__submit {
     width: 100%;
     height: 56px;
   }

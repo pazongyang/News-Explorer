@@ -1,16 +1,50 @@
-# React + Vite
+# NewsExplorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NewsExplorer is a responsive news search application built with React and Vite.  
+Users can search for news articles by keyword, view results as cards, and (when logged in) save articles for later reading.
 
-Currently, two official plugins are available:
+## Project Pitch Video
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Watch me show my project NewsExplorer and explain my struggle plus future improvements](https://drive.google.com/file/d/1w1A78dMFHmHxctayUs42cJxsCNa5O-_a/view?usp=sharing)
 
-## React Compiler
+## Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/pazongyang
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Search news articles by keyword
+- Display articles as responsive cards
+- “Show more” functionality for search results
+- User authentication (Sign in / Sign up modals)
+- Save and delete articles (for logged-in users)
+- Separate Saved Articles page
+- Fully responsive design (desktop, tablet, and mobile — including 320px)
+
+## Tech Stack
+
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **CSS (BEM methodology)**
+- **NewsAPI** – https://newsapi.org/
+
+## API
+
+This project uses **NewsAPI** to fetch news articles.
+
+To run the project locally, you will need an API key from:
+https://newsapi.org/
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+npm install
+```

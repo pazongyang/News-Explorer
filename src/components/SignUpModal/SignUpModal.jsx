@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./SignupModal.css";
+import "./SignUpModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 
 function SignupModal({ isOpen, onClose, onSwitchToLogin, onRegisterSuccess }) {

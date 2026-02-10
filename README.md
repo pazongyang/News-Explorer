@@ -3,6 +3,10 @@
 NewsExplorer is a responsive news search application built with React and Vite.  
 Users can search for news articles by keyword, view results as cards, and (when logged in) save articles for later reading.
 
+## Live Demo
+
+https://news-explorer-xi.vercel.app/
+
 ## Project Pitch Video
 
 [Watch me show my project NewsExplorer and explain my struggle plus future improvements](https://drive.google.com/file/d/1w1A78dMFHmHxctayUs42cJxsCNa5O-_a/view?usp=sharing)

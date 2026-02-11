@@ -1,0 +1,39 @@
+.success-modal__container {
+  width: 430px;
+  height: 182px;
+  padding: 43px 79px 51px 36px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9999;
+}
+
+.success-modal__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+.success-modal__signin {
+  align-self: flex-start;
+
+  background: none;
+  border: none;
+
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  color: rgba(47, 113, 229, 1);
+  cursor: pointer;
+  padding: 0;
+}
